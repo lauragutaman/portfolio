@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laura Gutaman — Product Manager</title>
+<meta name="description" content="Portfolio of Laura Gutaman, new grad product manager.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;800&family=Gochi+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sheet" id="home">
+  <header class="masthead">
+    <p class="kicker">Issue 001 — Product Edition <span class="scrawl">for city builders!</span></p>
+  </header>
+
+  <div class="grid">
+    <!-- About -->
+    <a class="block b-about" href="#about" data-open="about">
+      <div class="halftone face">
+        <span class="hand big">hi!</span>
+      </div>
+      <span class="tag">About Me →</span>
+    </a>
+
+    <div class="block b-blurb">
+      <p>LAURA GUTAMAN IS A NEW GRAD PRODUCT MANAGER FROM RIT WHO TURNS FUZZY PROBLEMS INTO SHIPPED PRODUCTS. SHE TALKS TO USERS, WRITES THE SPEC, ROLLS UP HER SLEEVES WITH ENGINEERS AND DESIGNERS, AND MEASURES WHAT MATTERS. KNOWN FOR USER RESEARCH, ROADMAPS, SQL, PROTOTYPES AND A GOOD STICKY NOTE.</p>
+      <span class="hand note">← click the squares</span>
+    </div>
+
+    <h1 class="vertical">LAURA</h1>
+
+    <!-- Projects -->
+    <a class="block b-projects" href="#projects" data-open="projects">
+      <div class="halftone stripes"><span class="hand big">projects</span></div>
+      <span class="tag">Projects →</span>
+    </a>
+
+    <div class="b-labels">
+      <span class="label">限定版</span>
+      <span class="label">PRODUCT</span>
+      <span class="label">2026</span>
+      <span class="label dot">●</span>
+    </div>
+
+    <!-- Resume -->
+    <a class="block b-resume" href="#resume" data-open="resume">
+      <div class="halftone dots"><span class="hand big">résumé</span></div>
+      <span class="tag">Resume →</span>
+    </a>
+
+    <a class="block b-contact" href="#contact" data-open="contact">
+      <div class="halftone checker"><span class="hand big">say hi</span></div>
+      <span class="tag">Contact →</span>
+    </a>
+
+    <h1 class="wordmark">GUTAMAN<span class="circle-num">PM</span></h1>
+
+    <div class="b-index">
+      <p class="idx-title">CONTENTS</p>
+      <a href="#about" data-open="about"><span>ABOUT ME</span><i></i><span>(01)</span></a>
+      <a href="#projects" data-open="projects"><span>PROJECTS</span><i></i><span>(02)</span></a>
+      <a href="#resume" data-open="resume"><span>RESUME</span><i></i><span>(03)</span></a>
+      <a href="#contact" data-open="contact"><span>CONTACT</span><i></i><span>(04)</span></a>
+      <a href="https://github.com/lauragutaman" target="_blank" rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
+    </div>
+  </div>
+</main>
+
+<!-- Sections (open as overlays) -->
+<section class="panel" id="about" aria-labelledby="about-h" hidden>
+  <div class="panel-inner">
+    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+    <h2 id="about-h" class="ph">ABOUT<span class="hand ph-scrawl">me!</span></h2>
+    <div class="cols">
+      <div class="halftone face tall"></div>
+      <div>
+        <p class="lede">I'm Laura — a new grad product manager who loves the messy middle between "what do people actually need?" and "it's live."</p>
+        <p>I studied at RIT, where I learned to pair systems thinking with empathy for users. I've led student product teams, run interviews and usability tests, prioritized backlogs, and partnered with engineers to ship features people use.</p>
+        <p>Outside of work: zines, record digging, film photography, and wandering new cities with a notebook.</p>
+        <ul class="facts">
+          <li><b>FOCUS</b> Consumer & B2B product, 0→1</li>
+          <li><b>TOOLS</b> Figma, Jira, SQL, Amplitude, Notion</li>
+          <li><b>STATUS</b> Open to new grad APM / PM roles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="projects" aria-labelledby="projects-h" hidden>
+  <div class="panel-inner">
+    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+    <h2 id="projects-h" class="ph">PROJECTS<span class="hand ph-scrawl">case studies</span></h2>
+    <div class="proj-grid">
+      <article class="proj">
+        <div class="halftone stripes"><span class="num">01</span></div>
+        <h3>CAMPUS EATS</h3>
+        <p class="meta">PM · Student team of 6 · 2025</p>
+        <p><b>Problem:</b> Students wasted 15+ min in dining lines. <b>Did:</b> 30 user interviews, defined MVP for mobile pre-order, wrote PRD, ran 2-week sprints. <b>Result:</b> 1,200 users in first semester, avg. wait cut 40%.</p>
+      </article>
+      <article class="proj">
+        <div class="halftone dots"><span class="num">02</span></div>
+        <h3>ONBOARDING REDESIGN</h3>
+        <p class="meta">Product Intern · 2025</p>
+        <p><b>Problem:</b> 55% drop-off during signup. <b>Did:</b> Funnel analysis in SQL + Amplitude, prototyped a shorter flow, A/B tested. <b>Result:</b> +18% activation.</p>
+      </article>
+      <article class="proj">
+        <div class="halftone checker"><span class="num">03</span></div>
+        <h3>ACCESSIBLE TRANSIT</h3>
+        <p class="meta">Capstone · 2026</p>
+        <p><b>Problem:</b> Riders with disabilities lacked real-time elevator status. <b>Did:</b> Journey maps, prioritization (RICE), roadmap, stakeholder demos. <b>Result:</b> Pilot proposal adopted by city partner.</p>
+      </article>
+      <article class="proj">
+        <div class="halftone face"><span class="num">04</span></div>
+        <h3>THIS PORTFOLIO</h3>
+        <p class="meta">Side project · 2026</p>
+        <p>A zine-inspired portfolio — built on a print-grid concept, shipped on Vercel. <a href="https://github.com/lauragutaman/portfolio" target="_blank" rel="noopener">See the repo ↗</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="resume" aria-labelledby="resume-h" hidden>
+  <div class="panel-inner">
+    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+    <h2 id="resume-h" class="ph">RESUME<span class="hand ph-scrawl">the short version</span></h2>
+    <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+    <div class="disco">
+      <p class="idx-title">EXPERIENCE</p>
+      <div class="row"><span>PRODUCT MANAGEMENT INTERN — COMPANY</span><i></i><span>(2025)</span></div>
+      <div class="row"><span>PRODUCT LEAD — STUDENT STARTUP</span><i></i><span>(2024–26)</span></div>
+      <div class="row"><span>UX RESEARCH ASSISTANT — RIT</span><i></i><span>(2024)</span></div>
+      <p class="idx-title">EDUCATION</p>
+      <div class="row"><span>B.S. — ROCHESTER INSTITUTE OF TECHNOLOGY</span><i></i><span>(2026)</span></div>
+      <p class="idx-title">SKILLS</p>
+      <div class="row"><span>USER RESEARCH · PRDS · ROADMAPPING</span><i></i><span>(PM)</span></div>
+      <div class="row"><span>SQL · AMPLITUDE · A/B TESTING</span><i></i><span>(DATA)</span></div>
+      <div class="row"><span>FIGMA · JIRA · NOTION · HTML/CSS</span><i></i><span>(TOOLS)</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="contact" aria-labelledby="contact-h" hidden>
+  <div class="panel-inner">
+    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+    <h2 id="contact-h" class="ph">CONTACT<span class="hand ph-scrawl">let's talk!</span></h2>
+    <div class="disco">
+      <a class="row" href="mailto:hello@example.com"><span>EMAIL</span><i></i><span>(✉)</span></a>
+      <a class="row" href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LINKEDIN</span><i></i><span>(↗)</span></a>
+      <a class="row" href="https://github.com/lauragutaman" target="_blank" rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
+    </div>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

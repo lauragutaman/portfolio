@@ -1,0 +1,100 @@
+:root{--paper:#f0d9cc;--ink:#151413;--hand:#fff;--line:2px solid var(--ink)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:Archivo,system-ui,sans-serif;
+  background-image:radial-gradient(rgba(0,0,0,.06) 1px,transparent 1px);background-size:4px 4px}
+a{color:inherit}
+.hand{font-family:"Gochi Hand",cursive;font-weight:400}
+.sheet{max-width:1200px;margin:0 auto;padding:20px}
+.masthead{border-bottom:var(--line);padding-bottom:8px;margin-bottom:16px}
+.kicker{font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.scrawl{font-family:"Rock Salt",cursive;text-transform:none;font-size:.9rem;margin-left:8px}
+
+.grid{display:grid;gap:14px;grid-template-columns:repeat(12,1fr);
+  grid-template-areas:
+  "about about about proj proj proj proj proj proj proj vert vert"
+  "blurb blurb blurb proj proj proj proj proj proj proj vert vert"
+  "blurb blurb blurb lab  lab  lab  lab  lab  lab  lab  vert vert"
+  "res   res   res   res  cont cont cont cont cont cont vert vert"
+  "word  word  word  word word word word word word word word word"
+  "idx   idx   idx   idx  idx  idx  idx  idx  idx  idx  idx  idx"}
+.b-about{grid-area:about;min-height:220px}.b-blurb{grid-area:blurb}.vertical{grid-area:vert}
+.b-projects{grid-area:proj;min-height:340px}.b-labels{grid-area:lab}
+.b-resume{grid-area:res;min-height:260px}.b-contact{grid-area:cont;min-height:260px}
+.wordmark{grid-area:word}.b-index{grid-area:idx}
+
+.block{position:relative;display:block;border:var(--line);text-decoration:none;overflow:hidden;
+  transition:transform .15s,box-shadow .15s;background:var(--paper)}
+.block:hover,.block:focus-visible{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ink);outline:none}
+.block .halftone{position:absolute;inset:0;display:grid;place-items:center}
+.tag{position:absolute;left:8px;bottom:8px;background:var(--ink);color:var(--paper);
+  font-family:"Archivo Black";font-size:1rem;padding:4px 10px;letter-spacing:.02em}
+.big{font-size:clamp(2.6rem,6vw,5rem);color:var(--hand);transform:rotate(-6deg);
+  text-shadow:2px 2px 0 var(--ink);-webkit-text-stroke:1px var(--ink)}
+
+/* halftone textures (pure CSS, xerox look) */
+.halftone{background-color:#3a3836;filter:contrast(1.2)}
+.face{background:
+  radial-gradient(circle at 50% 42%,transparent 0 22%,var(--ink) 23% 25%,transparent 26%),
+  radial-gradient(var(--ink) 1.4px,#8a8480 1.6px) 0 0/6px 6px}
+.stripes{background:repeating-linear-gradient(135deg,var(--ink) 0 14px,#6f6a66 14px 18px),var(--ink);
+  background-blend-mode:multiply}
+.stripes::after,.dots::after,.checker::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(rgba(240,217,204,.35) 1.2px,transparent 1.5px) 0 0/5px 5px;pointer-events:none}
+.dots{background:radial-gradient(var(--ink) 3px,#a59e98 3.5px) 0 0/12px 12px}
+.checker{background:conic-gradient(var(--ink) 25%,#58534f 0 50%,var(--ink) 0 75%,#58534f 0) 0 0/40px 40px}
+.halftone .hand{position:relative;z-index:1}
+
+.b-blurb{font-weight:800;font-size:.72rem;line-height:1.35;text-align:justify;position:relative}
+.note{display:block;margin-top:14px;font-size:1.5rem;text-align:left;transform:rotate(-3deg)}
+.vertical{font-family:"Archivo Black";writing-mode:vertical-rl;transform:rotate(180deg);
+  font-size:clamp(4rem,9vw,8.5rem);line-height:.85;text-align:right;letter-spacing:-.02em}
+.b-labels{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.label{background:var(--ink);color:var(--paper);font-family:"Archivo Black";font-size:clamp(1rem,2.4vw,1.8rem);padding:4px 12px}
+.label.dot{border-radius:0}
+.wordmark{font-family:"Archivo Black";font-size:clamp(3.2rem,13.5vw,11.5rem);line-height:.85;letter-spacing:-.04em;position:relative}
+.circle-num{font-family:"Gochi Hand";font-size:.22em;letter-spacing:0;border:3px solid var(--ink);border-radius:50%;
+  padding:.1em .35em;position:absolute;right:2%;top:-6%;transform:rotate(-12deg);background:var(--paper)}
+
+.b-index,.disco{font-weight:800;font-size:.85rem}
+.idx-title{font-weight:800;margin:14px 0 4px}
+.b-index a,.disco .row{display:flex;align-items:baseline;gap:6px;text-decoration:none;padding:3px 0}
+.b-index i,.disco i{flex:1;border-bottom:1.5px dotted var(--ink);transform:translateY(-3px)}
+.b-index a:hover,.disco a.row:hover{background:var(--ink);color:var(--paper)}
+
+/* panels */
+.panel{position:fixed;inset:0;background:var(--paper);overflow:auto;z-index:10;
+  background-image:radial-gradient(rgba(0,0,0,.06) 1px,transparent 1px);background-size:4px 4px;
+  animation:in .25s ease-out}
+@keyframes in{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.panel-inner{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+.close{font:800 1rem Archivo;background:var(--ink);color:var(--paper);border:0;padding:8px 14px;cursor:pointer}
+.close .hand{font-size:1.2rem}
+.ph{font-family:"Archivo Black";font-size:clamp(3rem,12vw,9rem);line-height:.9;letter-spacing:-.04em;margin:20px 0;
+  border-bottom:var(--line);position:relative}
+.ph-scrawl{position:absolute;right:0;top:-.9em;font-size:.28em;letter-spacing:0;transform:rotate(-8deg)}
+.cols{display:grid;grid-template-columns:1fr 1.4fr;gap:24px}
+.tall{position:relative;min-height:380px;border:var(--line)}
+.lede{font-weight:800;font-size:1.35rem;margin-bottom:14px}
+.cols p{margin-bottom:12px;line-height:1.55}
+.facts{list-style:none;margin-top:16px;border-top:var(--line)}
+.facts li{padding:8px 0;border-bottom:1px solid var(--ink)}
+.facts b{display:inline-block;width:80px}
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.proj{border:var(--line);padding:12px;background:var(--paper)}
+.proj .halftone{position:relative;height:160px;border:var(--line);margin-bottom:10px}
+.num{position:absolute;left:8px;top:6px;background:var(--ink);color:var(--paper);font-family:"Archivo Black";font-size:1.4rem;padding:2px 8px;z-index:1}
+.proj h3{font-family:"Archivo Black";font-size:1.5rem}
+.meta{font-family:"Gochi Hand";font-size:1.2rem;margin-bottom:6px}
+.proj p{line-height:1.5}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);font-family:"Archivo Black";padding:10px 18px;text-decoration:none;margin-bottom:10px}
+.btn:hover{transform:rotate(-2deg)}
+
+@media (max-width:760px){
+  .grid{grid-template-columns:1fr 1fr;grid-template-areas:
+   "proj proj" "about blurb" "res cont" "lab lab" "word word" "idx idx"}
+  .vertical{display:none}
+  .b-projects{min-height:240px}.b-about,.b-resume,.b-contact{min-height:180px}
+  .cols,.proj-grid{grid-template-columns:1fr}
+  .tall{min-height:220px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
