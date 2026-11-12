@@ -14,7 +14,7 @@ a{color:inherit}
   "about about about proj proj proj proj proj proj proj vert vert"
   "blurb blurb blurb proj proj proj proj proj proj proj vert vert"
   "blurb blurb blurb lab  lab  lab  lab  lab  lab  lab  vert vert"
-  "res   res   res   proc proc proc cont cont cont cont vert vert"
+  "res   res   res   res  cont cont cont cont cont cont vert vert"
   "word  word  word  word word word word word word word word word"
   "idx   idx   idx   idx  idx  idx  idx  idx  idx  idx  idx  idx"}
 .b-about{grid-area:about;min-height:220px}.b-blurb{grid-area:blurb}.vertical{grid-area:vert}
@@ -91,7 +91,7 @@ a{color:inherit}
 
 @media (max-width:760px){
   .grid{grid-template-columns:1fr 1fr;grid-template-areas:
-   "proj proj" "about blurb" "res proc" "cont cont" "lab lab" "word word" "idx idx"}
+   "proj proj" "about blurb" "res cont" "lab lab" "word word" "idx idx"}
   .vertical{display:none}
   .b-projects{min-height:240px}.b-about,.b-resume,.b-contact,.b-process{min-height:180px}
   .cols,.proj-grid{grid-template-columns:1fr}
