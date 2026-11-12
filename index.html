@@ -1,179 +1,223 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laura Gutaman — Product Manager</title>
-<meta name="description" content="Portfolio of Laura Gutaman, new grad product manager.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;800&family=Gochi+Hand&family=Rock+Salt&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laura Gutaman — Product Manager</title>
+  <meta name="description" content="Portfolio of Laura Gutaman, new grad product manager.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;800&family=Gochi+Hand&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main class="sheet" id="home">
-  <header class="masthead">
-    <p class="kicker">Issue 001 — Product Edition <span class="scrawl">for city builders!</span></p>
-  </header>
+  <main class="sheet" id="home">
+    <header class="masthead">
+      <p class="kicker">Issue 001 — Product Edition <span class="scrawl">for city builders!</span></p>
+    </header>
 
-  <div class="grid">
-    <!-- About -->
-    <a class="block b-about" href="#about" data-open="about">
-      <div class="halftone face">
-        <span class="hand big">hi!</span>
+    <div class="grid">
+      <!-- About -->
+      <a class="block b-about" href="#about" data-open="about">
+        <div class="halftone face">
+          <span class="hand big">hi!</span>
+        </div>
+        <span class="tag">About Me →</span>
+      </a>
+
+      <div class="block b-blurb">
+        <p>LAURA GUTAMAN IS A PRODUCT MANAGER IN THE MAKING AT RIT, STUDYING NEW MEDIA INTERACTIVE DEVELOPMENT AND
+          MARKETING. SHE HAS SHIPPED AI PRODUCT WORK AT LUMEN TECHNOLOGIES, SCOPED AN AI ANALYTICS ASSISTANT AT GOOGLE
+          ADS, AND OWNED AN INTERNAL TOOL AT HONEYWELL. KNOWN FOR PRDS, USER DISCOVERY IN ENGLISH AND SPANISH, RAG, SQL,
+          PYTHON AND THE RICE FRAMEWORK. PRESIDENTIAL SCHOLAR. HSF SCHOLAR. MAY 2027.</p>
+        <span class="hand note">← click the squares</span>
       </div>
-      <span class="tag">About Me →</span>
-    </a>
 
-    <div class="block b-blurb">
-      <p>LAURA GUTAMAN IS A PRODUCT MANAGER IN THE MAKING AT RIT, STUDYING NEW MEDIA INTERACTIVE DEVELOPMENT AND MARKETING. SHE HAS SHIPPED AI PRODUCT WORK AT LUMEN TECHNOLOGIES, SCOPED AN AI ANALYTICS ASSISTANT AT GOOGLE ADS, AND OWNED AN INTERNAL TOOL AT HONEYWELL. KNOWN FOR PRDS, USER DISCOVERY IN ENGLISH AND SPANISH, RAG, SQL, PYTHON AND THE RICE FRAMEWORK. PRESIDENTIAL SCHOLAR. HSF SCHOLAR. MAY 2027.</p>
-      <span class="hand note">← click the squares</span>
+      <h1 class="vertical">LAURA</h1>
+
+      <!-- Projects -->
+      <a class="block b-projects" href="#projects" data-open="projects">
+        <div class="halftone stripes"><span class="hand big">projects</span></div>
+        <span class="tag">Projects →</span>
+      </a>
+
+      <div class="b-labels">
+        <span class="label">限定版</span>
+        <span class="label">PRODUCT</span>
+        <span class="label">2027</span>
+        <span class="label dot">●</span>
+      </div>
+
+      <!-- Resume -->
+      <a class="block b-resume" href="#resume" data-open="resume">
+        <div class="halftone dots"><span class="hand big">résumé</span></div>
+        <span class="tag">Resume →</span>
+      </a>
+
+      <a class="block b-contact" href="#contact" data-open="contact">
+        <div class="halftone checker"><span class="hand big">say hi</span></div>
+        <span class="tag">Contact →</span>
+      </a>
+
+      <h1 class="wordmark">GUTAMAN<span class="circle-num">PM</span></h1>
+
+      <div class="b-index">
+        <p class="idx-title">CONTENTS</p>
+        <a href="#about" data-open="about"><span>ABOUT ME</span><i></i><span>(01)</span></a>
+        <a href="#projects" data-open="projects"><span>PROJECTS</span><i></i><span>(02)</span></a>
+        <a href="#resume" data-open="resume"><span>RESUME</span><i></i><span>(03)</span></a>
+        <a href="#contact" data-open="contact"><span>CONTACT</span><i></i><span>(04)</span></a>
+        <a href="https://github.com/lauragutaman" target="_blank"
+          rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
+      </div>
     </div>
+  </main>
 
-    <h1 class="vertical">LAURA</h1>
-
-    <!-- Projects -->
-    <a class="block b-projects" href="#projects" data-open="projects">
-      <div class="halftone stripes"><span class="hand big">projects</span></div>
-      <span class="tag">Projects →</span>
-    </a>
-
-    <div class="b-labels">
-      <span class="label">限定版</span>
-      <span class="label">PRODUCT</span>
-      <span class="label">2027</span>
-      <span class="label dot">●</span>
+  <!-- Sections (open as overlays) -->
+  <section class="panel" id="about" aria-labelledby="about-h" hidden>
+    <div class="panel-inner">
+      <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+      <h2 id="about-h" class="ph">ABOUT<span class="hand ph-scrawl">me!</span></h2>
+      <div class="cols">
+        <div class="halftone face tall"></div>
+        <div>
+          <p class="lede">I'm Laura — an aspiring product manager who sits where AI, people, and business meet.</p>
+          <p>I'm studying New Media Interactive Development and Marketing at RIT (Presidential Scholar, HSF Scholar), so
+            I can talk to engineers about architecture and to users about what's actually painful. This summer at Lumen
+            Technologies I wrote PRDs for scaling an AI repository and shipped a Python tool that saved $46K+ a year.
+          </p>
+          <p>I founded the Multicultural Business Association and grew it to 220+ members. I'm also a Break Through Tech
+            AI/ML Fellow.</p>
+          <p>Off the clock: women's weightlifting, bouldering, flute, photography, designing clothes, and good tea and
+            coffee.</p>
+          <ul class="facts">
+            <li><b>FOCUS</b> AI products, user discovery, growth</li>
+            <li><b>TOOLS</b> Figma, PowerBI, Salesforce, SQL, Python, Agile</li>
+            <li><b>STATUS</b> Open to new grad APM / PM roles (May 2027)</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Resume -->
-    <a class="block b-resume" href="#resume" data-open="resume">
-      <div class="halftone dots"><span class="hand big">résumé</span></div>
-      <span class="tag">Resume →</span>
-    </a>
-
-    <a class="block b-contact" href="#contact" data-open="contact">
-      <div class="halftone checker"><span class="hand big">say hi</span></div>
-      <span class="tag">Contact →</span>
-    </a>
-
-    <h1 class="wordmark">GUTAMAN<span class="circle-num">PM</span></h1>
-
-    <div class="b-index">
-      <p class="idx-title">CONTENTS</p>
-      <a href="#about" data-open="about"><span>ABOUT ME</span><i></i><span>(01)</span></a>
-      <a href="#projects" data-open="projects"><span>PROJECTS</span><i></i><span>(02)</span></a>
-      <a href="#resume" data-open="resume"><span>RESUME</span><i></i><span>(03)</span></a>
-      <a href="#contact" data-open="contact"><span>CONTACT</span><i></i><span>(04)</span></a>
-      <a href="https://github.com/lauragutaman" target="_blank" rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
+  <section class="panel" id="projects" aria-labelledby="projects-h" hidden>
+    <div class="panel-inner">
+      <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+      <h2 id="projects-h" class="ph">PROJECTS<span class="hand ph-scrawl">case studies</span></h2>
+      <div class="proj-grid">
+        <article class="proj">
+          <div class="halftone stripes"><span class="num">01</span></div>
+          <h3>AI REPOSITORY @ LUMEN</h3>
+          <p class="meta">AI Product Intern · Summer 2026</p>
+          <p><b>Problem:</b> An internal AI repository had to scale without costs running away. <b>Did:</b> Wrote PRDs
+            and cost-benefit analyses comparing a custom RAG build with Microsoft agents, and mapped how people search
+            to guide retrieval tuning. <b>Result:</b> Context precision went from 0.72 to 0.93, with ~$10K+ in long-term
+            savings. A separate Python license-reclamation tool cut task time 98.6% and saves $46K+ a year.</p>
+        </article>
+        <article class="proj">
+          <div class="halftone dots"><span class="num">02</span></div>
+          <h3>AI KPI ASSISTANT @ GOOGLE ADS</h3>
+          <p class="meta">APMM Intern · Summer 2025</p>
+          <p><b>Problem:</b> Global teams waited too long for KPI insights. <b>Did:</b> Led scoping and API requirements
+            with Engineering for a beta AI analytics assistant, and synthesized research across 5 cross-functional teams
+            to shape a 12-month roadmap. <b>Result:</b> KPI data latency dropped 30% for 200+ users.</p>
+        </article>
+        <article class="proj">
+          <div class="halftone checker"><span class="num">03</span></div>
+          <h3>THRIFTING AI ASSISTANT</h3>
+          <p class="meta">Personal project · 2026–now</p>
+          <p><b>Problem:</b> Secondhand sizing is a guessing game. <b>Did:</b> Built a fit-matching agent with OpenAI
+            CLIP that compares garments to a user’s body measurements, plus a Playwright pipeline that pulls live Depop
+            listings. <b>Result:</b> Sizing mismatches fell 10.1% over 2 iterations.</p>
+        </article>
+        <article class="proj">
+          <div class="halftone face"><span class="num">04</span></div>
+          <h3>PLAYABLE NON-PROFIT</h3>
+          <p class="meta">Product & Business Lead · 2026–now</p>
+          <p><b>Problem:</b> Assistive toy hardware on a tight budget. <b>Did:</b> Partnered with 3D-printing hubs and
+            Engineering to define edge cases, material requirements and testing frameworks. <b>Result:</b> Per-unit cost
+            down 21% ($1K+ saved) and breakage down 13% per cycle.</p>
+        </article>
+        <article class="proj">
+          <div class="halftone stripes"><span class="num">05</span></div>
+          <h3>GNOMI HACKATHON</h3>
+          <p class="meta">Growth Strategist Track · May 2026</p>
+          <p>Designed a 4-loop growth strategy (viral, referral, live events, creator flywheel) around a north-star
+            metric, pitching GNOMI as “Bloomberg for Gen Z.” <b>Placed top 3</b> out of 1,000+ applicants.</p>
+        </article>
+        <article class="proj">
+          <div class="halftone dots"><span class="num">06</span></div>
+          <h3>HONEYWELL PROCESS TOOL</h3>
+          <p class="meta">PM Co-op · 2024</p>
+          <p>Acted as product owner for an internal documentation tool and mapped workflows across sales, engineering
+            and ops. Salesforce A/B tests raised leads 40% and drove <b>$550K+ in revenue</b>. Ran 60+ discovery calls
+            in English and Spanish.</p>
+        </article>
+      </div>
     </div>
-  </div>
-</main>
+  </section>
 
-<!-- Sections (open as overlays) -->
-<section class="panel" id="about" aria-labelledby="about-h" hidden>
-  <div class="panel-inner">
-    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
-    <h2 id="about-h" class="ph">ABOUT<span class="hand ph-scrawl">me!</span></h2>
-    <div class="cols">
-      <div class="halftone face tall"></div>
-      <div>
-        <p class="lede">I'm Laura — an aspiring product manager who sits where AI, people, and business meet.</p>
-        <p>I'm studying New Media Interactive Development and Marketing at RIT (Presidential Scholar, HSF Scholar), so I can talk to engineers about architecture and to users about what's actually painful. This summer at Lumen Technologies I wrote PRDs for scaling an AI repository and shipped a Python tool that saved $46K+ a year.</p>
-        <p>I founded the Multicultural Business Association and grew it to 220+ members. I'm also a Break Through Tech AI/ML Fellow.</p>
-        <p>Off the clock: women's weightlifting, bouldering, flute, photography, designing clothes, and good tea and coffee.</p>
-        <ul class="facts">
-          <li><b>FOCUS</b> AI products, user discovery, growth</li>
-          <li><b>TOOLS</b> Figma, PowerBI, Salesforce, SQL, Python, Agile</li>
-          <li><b>STATUS</b> Open to new grad APM / PM roles (May 2027)</li>
+  <section class="panel" id="resume" aria-labelledby="resume-h" hidden>
+    <div class="panel-inner">
+      <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+      <h2 id="resume-h" class="ph">RESUME<span class="hand ph-scrawl">the short version</span></h2>
+      <div class="disco">
+        <h3 class="idx-title">EXPERIENCE</h3>
+        <div class="row"><span>AI PRODUCT INTERN — LUMEN TECHNOLOGIES</span><i></i><span>(2026)</span></div>
+        <ul>
+          <li>Authored PRD’s, architectural trade-offs, and cost benefit analyses for scaling an AI repository,
+            evaluating custom RAG v.
+            Microsoft agents’ versions, analyzed performance and cost trade-offs and drove long-term cost savings by
+            ~$10k</li>
+          <li>Analyzed user engagement patterns to define automated license-reclamation features; designed and deployed
+            a Python
+            solution that eliminated manual tracking, reduced task completion time by 98.6%, and drove $46K+ in annual
+            cost savings</li>
+          <li>Conducted user discovery to map search behavior and query types, guiding RAG retrieval optimizations;
+            improved context
+            precision from 0.72 to 0.93 by refining ingestion pipelines, boosting answer accuracy while maximizing token
+            budget</li>
         </ul>
+        <div class="row"><span>ASSOCIATE PRODUCT MARKETING MGR INTERN — GOOGLE ADS</span><i></i><span>(2025)</span></div>
+        <div class="row"><span>SALES/OPS PROJECT MGMT CO-OP — HONEYWELL</span><i></i><span>(2024)</span></div>
+        <p class="idx-title">PROJECTS</p>
+        <div class="row"><span>PERSONAL THRIFTING AI ASSISTANT</span><i></i><span>(2026–)</span></div>
+        <div class="row"><span>PLAYABLE NON-PROFIT — PRODUCT &amp; BUSINESS LEAD</span><i></i><span>(2026–)</span></div>
+        <div class="row"><span>GNOMI HACKATHON — TOP 3, GROWTH TRACK</span><i></i><span>(2026)</span></div>
+        <p class="idx-title">LEADERSHIP</p>
+        <div class="row"><span>BREAK THROUGH TECH — AI/ML FELLOW</span><i></i><span>(2026–)</span></div>
+        <div class="row"><span>MULTICULTURAL BUSINESS ASSOC. — FOUNDER &amp; PRESIDENT</span><i></i><span>(2023–)</span>
+        </div>
+        <p class="idx-title">EDUCATION</p>
+        <div class="row"><span>B.S. NEW MEDIA INTERACTIVE DEV + B.S. MARKETING — RIT</span><i></i><span>(2027)</span>
+        </div>
+        <p class="idx-title">SKILLS</p>
+        <div class="row"><span>PRDS · USER DISCOVERY · RICE · A/B TESTING · AGILE</span><i></i><span>(PM)</span></div>
+        <div class="row"><span>SQL · PYTHON · JAVASCRIPT · HTML · RAG</span><i></i><span>(TECH)</span></div>
+        <div class="row"><span>FIGMA · POWERBI · SALESFORCE · GOOGLE ANALYTICS</span><i></i><span>(TOOLS)</span></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="panel" id="projects" aria-labelledby="projects-h" hidden>
-  <div class="panel-inner">
-    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
-    <h2 id="projects-h" class="ph">PROJECTS<span class="hand ph-scrawl">case studies</span></h2>
-    <div class="proj-grid">
-      <article class="proj">
-        <div class="halftone stripes"><span class="num">01</span></div>
-        <h3>AI REPOSITORY @ LUMEN</h3>
-        <p class="meta">AI Product Intern · Summer 2026</p>
-        <p><b>Problem:</b> An internal AI repository had to scale without costs running away. <b>Did:</b> Wrote PRDs and cost-benefit analyses comparing a custom RAG build with Microsoft agents, and mapped how people search to guide retrieval tuning. <b>Result:</b> Context precision went from 0.72 to 0.93, with ~$10K+ in long-term savings. A separate Python license-reclamation tool cut task time 98.6% and saves $46K+ a year.</p>
-      </article>
-      <article class="proj">
-        <div class="halftone dots"><span class="num">02</span></div>
-        <h3>AI KPI ASSISTANT @ GOOGLE ADS</h3>
-        <p class="meta">APMM Intern · Summer 2025</p>
-        <p><b>Problem:</b> Global teams waited too long for KPI insights. <b>Did:</b> Led scoping and API requirements with Engineering for a beta AI analytics assistant, and synthesized research across 5 cross-functional teams to shape a 12-month roadmap. <b>Result:</b> KPI data latency dropped 30% for 200+ users.</p>
-      </article>
-      <article class="proj">
-        <div class="halftone checker"><span class="num">03</span></div>
-        <h3>THRIFTING AI ASSISTANT</h3>
-        <p class="meta">Personal project · 2026–now</p>
-        <p><b>Problem:</b> Secondhand sizing is a guessing game. <b>Did:</b> Built a fit-matching agent with OpenAI CLIP that compares garments to a user’s body measurements, plus a Playwright pipeline that pulls live Depop listings. <b>Result:</b> Sizing mismatches fell 10.1% over 2 iterations.</p>
-      </article>
-      <article class="proj">
-        <div class="halftone face"><span class="num">04</span></div>
-        <h3>PLAYABLE NON-PROFIT</h3>
-        <p class="meta">Product & Business Lead · 2026–now</p>
-        <p><b>Problem:</b> Assistive toy hardware on a tight budget. <b>Did:</b> Partnered with 3D-printing hubs and Engineering to define edge cases, material requirements and testing frameworks. <b>Result:</b> Per-unit cost down 21% ($1K+ saved) and breakage down 13% per cycle.</p>
-      </article>
-      <article class="proj">
-        <div class="halftone stripes"><span class="num">05</span></div>
-        <h3>GNOMI HACKATHON</h3>
-        <p class="meta">Growth Strategist Track · May 2026</p>
-        <p>Designed a 4-loop growth strategy (viral, referral, live events, creator flywheel) around a north-star metric, pitching GNOMI as “Bloomberg for Gen Z.” <b>Placed top 3</b> out of 1,000+ applicants.</p>
-      </article>
-      <article class="proj">
-        <div class="halftone dots"><span class="num">06</span></div>
-        <h3>HONEYWELL PROCESS TOOL</h3>
-        <p class="meta">PM Co-op · 2024</p>
-        <p>Acted as product owner for an internal documentation tool and mapped workflows across sales, engineering and ops. Salesforce A/B tests raised leads 40% and drove <b>$550K+ in revenue</b>. Ran 60+ discovery calls in English and Spanish.</p>
-      </article>
+  <section class="panel" id="contact" aria-labelledby="contact-h" hidden>
+    <div class="panel-inner">
+      <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
+      <h2 id="contact-h" class="ph">CONTACT<span class="hand ph-scrawl">let's talk!</span></h2>
+      <div class="disco">
+        <a class="row" href="mailto:lgutaman@gmail.com"><span>EMAIL</span><i></i><span>(✉)</span></a>
+        <a class="row" href="https://www.linkedin.com/in/laura-gutaman/" target="_blank"
+          rel="noopener"><span>LINKEDIN</span><i></i><span>(↗)</span></a>
+        <a class="row" href="https://github.com/lauragutaman" target="_blank"
+          rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="panel" id="resume" aria-labelledby="resume-h" hidden>
-  <div class="panel-inner">
-    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
-    <h2 id="resume-h" class="ph">RESUME<span class="hand ph-scrawl">the short version</span></h2>
-    <div class="disco">
-      <p class="idx-title">EXPERIENCE</p>
-      <div class="row"><span>AI PRODUCT INTERN — LUMEN TECHNOLOGIES</span><i></i><span>(2026)</span></div>
-      <div class="row"><span>ASSOC. PRODUCT MARKETING MGR INTERN — GOOGLE ADS</span><i></i><span>(2025)</span></div>
-      <div class="row"><span>SALES/OPS PROJECT MGMT CO-OP — HONEYWELL</span><i></i><span>(2024)</span></div>
-      <p class="idx-title">PROJECTS</p>
-      <div class="row"><span>PERSONAL THRIFTING AI ASSISTANT</span><i></i><span>(2026–)</span></div>
-      <div class="row"><span>PLAYABLE NON-PROFIT — PRODUCT &amp; BUSINESS LEAD</span><i></i><span>(2026–)</span></div>
-      <div class="row"><span>GNOMI HACKATHON — TOP 3, GROWTH TRACK</span><i></i><span>(2026)</span></div>
-      <p class="idx-title">LEADERSHIP</p>
-      <div class="row"><span>BREAK THROUGH TECH — AI/ML FELLOW</span><i></i><span>(2026–)</span></div>
-      <div class="row"><span>MULTICULTURAL BUSINESS ASSOC. — FOUNDER &amp; PRESIDENT</span><i></i><span>(2023–)</span></div>
-      <p class="idx-title">EDUCATION</p>
-      <div class="row"><span>B.S. NEW MEDIA INTERACTIVE DEV + B.S. MARKETING — RIT</span><i></i><span>(2027)</span></div>
-      <p class="idx-title">SKILLS</p>
-      <div class="row"><span>PRDS · USER DISCOVERY · RICE · A/B TESTING · AGILE</span><i></i><span>(PM)</span></div>
-      <div class="row"><span>SQL · PYTHON · JAVASCRIPT · HTML · RAG</span><i></i><span>(TECH)</span></div>
-      <div class="row"><span>FIGMA · POWERBI · SALESFORCE · GOOGLE ANALYTICS</span><i></i><span>(TOOLS)</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="panel" id="contact" aria-labelledby="contact-h" hidden>
-  <div class="panel-inner">
-    <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
-    <h2 id="contact-h" class="ph">CONTACT<span class="hand ph-scrawl">let's talk!</span></h2>
-    <div class="disco">
-      <a class="row" href="mailto:lgutaman@gmail.com"><span>EMAIL</span><i></i><span>(✉)</span></a>
-      <a class="row" href="https://www.linkedin.com/in/laura-gutaman/" target="_blank" rel="noopener"><span>LINKEDIN</span><i></i><span>(↗)</span></a>
-      <a class="row" href="https://github.com/lauragutaman" target="_blank" rel="noopener"><span>GITHUB</span><i></i><span>(↗)</span></a>
-    </div>
-  </div>
-</section>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
