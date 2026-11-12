@@ -138,3 +138,4 @@ a{color:inherit}
 .pm-body h4{font-family:"Archivo Black";margin:14px 0 6px}.pm-body img{max-width:100%;border:var(--line);margin:8px 0}
 .pm-pdf{width:100%;aspect-ratio:16/10;border:var(--line);background:#fff;display:block}
 @media (max-width:760px){.pm-sec{grid-template-columns:1fr;gap:8px}.pm-inner{padding:18px 16px 32px}}
+.pm-body code{font-family:ui-monospace,monospace;font-size:.9em;background:rgba(0,0,0,.08);padding:0 4px}
