@@ -109,3 +109,4 @@ a{color:inherit}
 .job li{margin-bottom:6px}
 @media (max-width:760px){.res-sec{grid-template-columns:1fr;gap:10px}.job .row{flex-wrap:wrap}}
 .job .row span:last-child{white-space:nowrap}
+.tile-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
