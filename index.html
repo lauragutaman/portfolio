@@ -113,29 +113,31 @@
       <button class="close" data-close aria-label="Close">✕ <span class="hand">back</span></button>
       <h2 id="projects-h" class="ph">PROJECTS<span class="hand ph-scrawl">case studies</span></h2>
       <div class="proj-grid">
-        <article class="proj">
+        <article class="proj" data-proj="thrift" tabindex="0" role="button" aria-haspopup="dialog">
           <div class="halftone checker"><span class="num">01</span></div>
           <h3>THRIFTING AI ASSISTANT</h3>
           <p class="meta">Personal project · 2026–now</p>
           <p><b>Problem:</b> Secondhand sizing is a guessing game. <b>Did:</b> Built a fit-matching agent with OpenAI
             CLIP that compares garments to a user’s body measurements, plus a Playwright pipeline that pulls live Depop
             listings. <b>Result:</b> Sizing mismatches fell 10.1% over 2 iterations.</p>
+          <span class="open-hint hand">open project →</span>
         </article>
-        <article class="proj">
+        <article class="proj" data-proj="playable" tabindex="0" role="button" aria-haspopup="dialog">
           <div class="halftone face"><span class="num">02</span></div>
           <h3>PLAYABLE NON-PROFIT</h3>
           <p class="meta">Product & Business Lead · 2026–now</p>
           <p><b>Problem:</b> Assistive toy hardware on a tight budget. <b>Did:</b> Partnered with 3D-printing hubs and
             Engineering to define edge cases, material requirements and testing frameworks. <b>Result:</b> Per-unit cost
             down 21% ($1K+ saved) and breakage down 13% per cycle.</p>
+          <span class="open-hint hand">open project →</span>
         </article>
-        <article class="proj">
-          <a class="proj-img" href="docs/GNOMI_Pitch_Deck_GutamanLaura.pdf" target="_blank" rel="noopener"><img src="images/gnomi-cover.jpg" alt="GNOMI pitch deck cover slide" width="900" height="506" loading="lazy"><span class="num">03</span></a>
+        <article class="proj" data-proj="gnomi" tabindex="0" role="button" aria-haspopup="dialog">
+          <div class="proj-img"><img src="images/gnomi-cover.jpg" alt="GNOMI pitch deck cover slide" width="900" height="506" loading="lazy"><span class="num">03</span></div>
           <h3>GNOMI HACKATHON</h3>
           <p class="meta">Growth Strategist Track · May 2026</p>
           <p>Designed a 4-loop growth strategy (viral, referral, live events, creator flywheel) around a north-star
             metric, pitching GNOMI as “Bloomberg for Gen Z.” <b>Placed top 3</b> out of 1,000+ applicants.</p>
-          <a class="btn small" href="docs/GNOMI_Pitch_Deck_GutamanLaura.pdf" target="_blank" rel="noopener">View pitch deck ↗</a>
+          <span class="open-hint hand">open project →</span>
         </article>
       </div>
     </div>
@@ -215,6 +217,62 @@
       </div>
     </div>
   </section>
+
+  <dialog class="proj-modal" id="pm-thrift" aria-labelledby="pm-thrift-h">
+    <div class="pm-inner">
+      <button class="pm-x" data-pm-close aria-label="Close project">✕</button>
+      <p class="meta">Personal project · 2026–now</p>
+      <h2 id="pm-thrift-h" class="pm-title">THRIFTING AI ASSISTANT</h2>
+      <div class="halftone checker pm-media"></div>
+      <section class="pm-sec"><h3>OVERVIEW</h3><div class="pm-body"><p><b>Problem:</b> Secondhand sizing is a guessing game. <b>Did:</b> Built a fit-matching agent with OpenAI
+            CLIP that compares garments to a user’s body measurements, plus a Playwright pipeline that pulls live Depop
+            listings. <b>Result:</b> Sizing mismatches fell 10.1% over 2 iterations.</p></div></section>
+      <section class="pm-sec"><h3>PROCESS DOCUMENTATION</h3>
+        <div class="pm-body">
+          <!-- Write your process for this project here: <p>...</p>, <h4>...</h4>, images <img src="images/..."> -->
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog class="proj-modal" id="pm-playable" aria-labelledby="pm-playable-h">
+    <div class="pm-inner">
+      <button class="pm-x" data-pm-close aria-label="Close project">✕</button>
+      <p class="meta">Product &amp; Business Lead · 2026–now</p>
+      <h2 id="pm-playable-h" class="pm-title">PLAYABLE NON-PROFIT</h2>
+      <div class="halftone face pm-media"></div>
+      <section class="pm-sec"><h3>OVERVIEW</h3><div class="pm-body"><p><b>Problem:</b> Assistive toy hardware on a tight budget. <b>Did:</b> Partnered with 3D-printing hubs and
+            Engineering to define edge cases, material requirements and testing frameworks. <b>Result:</b> Per-unit cost
+            down 21% ($1K+ saved) and breakage down 13% per cycle.</p></div></section>
+      <section class="pm-sec"><h3>PROCESS DOCUMENTATION</h3>
+        <div class="pm-body">
+          <!-- Write your process for this project here: <p>...</p>, <h4>...</h4>, images <img src="images/..."> -->
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog class="proj-modal" id="pm-gnomi" aria-labelledby="pm-gnomi-h">
+    <div class="pm-inner">
+      <button class="pm-x" data-pm-close aria-label="Close project">✕</button>
+      <p class="meta">Growth Strategist Track · May 2026</p>
+      <h2 id="pm-gnomi-h" class="pm-title">GNOMI HACKATHON</h2>
+      <img class="pm-media" src="images/gnomi-cover.jpg" alt="GNOMI pitch deck cover slide">
+      <section class="pm-sec"><h3>OVERVIEW</h3><div class="pm-body"><p>Designed a 4-loop growth strategy (viral, referral, live events, creator flywheel) around a north-star
+            metric, pitching GNOMI as “Bloomberg for Gen Z.” <b>Placed top 3</b> out of 1,000+ applicants.</p></div></section>
+      <section class="pm-sec"><h3>PITCH DECK</h3>
+        <div class="pm-body">
+          <iframe class="pm-pdf" src="docs/GNOMI_Pitch_Deck_GutamanLaura.pdf#view=FitH" title="GNOMI pitch deck"></iframe>
+          <a class="btn small" href="docs/GNOMI_Pitch_Deck_GutamanLaura.pdf" target="_blank" rel="noopener">Open deck in new tab ↗</a>
+        </div>
+      </section>
+      <section class="pm-sec"><h3>PROCESS DOCUMENTATION</h3>
+        <div class="pm-body">
+          <!-- Write your process for this project here: <p>...</p>, <h4>...</h4>, images <img src="images/..."> -->
+        </div>
+      </section>
+    </div>
+  </dialog>
 
   <script src="main.js"></script>
 </body>
