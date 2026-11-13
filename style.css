@@ -139,3 +139,5 @@ a{color:inherit}
 .pm-pdf{width:100%;aspect-ratio:16/10;border:var(--line);background:#fff;display:block}
 @media (max-width:760px){.pm-sec{grid-template-columns:1fr;gap:8px}.pm-inner{padding:18px 16px 32px}}
 .pm-body code{font-family:ui-monospace,monospace;font-size:.9em;background:rgba(0,0,0,.08);padding:0 4px}
+.gh-link{display:inline-flex;vertical-align:middle;margin-left:.15em;font-size:.8em;color:var(--ink);transition:transform .15s}
+.gh-link:hover,.gh-link:focus-visible{transform:rotate(-10deg) scale(1.15)}

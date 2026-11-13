@@ -12,7 +12,7 @@ addEventListener('hashchange',show);show();
 // project pop-ups
 document.querySelectorAll('[data-proj]').forEach(card=>{
   const open=()=>{const d=document.getElementById('pm-'+card.dataset.proj);d.showModal();d.scrollTop=0;d.dataset.from=card.dataset.proj};
-  card.addEventListener('click',open);
+  card.addEventListener('click',e=>{if(!e.target.closest('a'))open()});
   card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
 });
 document.querySelectorAll('.proj-modal').forEach(d=>{
