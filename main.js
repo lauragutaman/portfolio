@@ -1,4 +1,4 @@
-const ids=['about','projects','resume','contact'];
+const ids=['about','projects','resume','blog','contact'];
 function show(){
   const h=location.hash.slice(1);
   ids.forEach(id=>{document.getElementById(id).hidden=id!==h});

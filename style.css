@@ -44,7 +44,7 @@ a{color:inherit}
 .checker{background:conic-gradient(var(--ink) 25%,#58534f 0 50%,var(--ink) 0 75%,#58534f 0) 0 0/40px 40px}
 .halftone .hand{position:relative;z-index:1}
 
-.b-blurb{font-weight:800;font-size:.72rem;line-height:1.35;text-align:justify;position:relative}
+.b-blurb{min-height:220px}
 .note{display:block;margin-top:14px;font-size:1.5rem;text-align:left;transform:rotate(-3deg)}
 .vertical{font-family:"Archivo Black";writing-mode:vertical-rl;transform:rotate(180deg);
   font-size:clamp(4rem,9vw,8.5rem);line-height:.85;text-align:right;letter-spacing:-.02em}
@@ -141,3 +141,12 @@ a{color:inherit}
 .pm-body code{font-family:ui-monospace,monospace;font-size:.9em;background:rgba(0,0,0,.08);padding:0 4px}
 .gh-link{display:inline-flex;vertical-align:middle;margin-left:.15em;font-size:.8em;color:var(--ink);transition:transform .15s}
 .gh-link:hover,.gh-link:focus-visible{transform:rotate(-10deg) scale(1.15)}
+/* blog */
+.posts{display:grid;gap:22px}
+.post{display:grid;grid-template-columns:320px 1fr;gap:22px;border-top:var(--line);padding-top:22px}
+.post-media{position:relative;width:100%;aspect-ratio:4/3;border:var(--line);object-fit:cover;display:block}
+.post h3{font-family:"Archivo Black";font-size:clamp(1.4rem,3vw,2.2rem);line-height:1;margin-bottom:10px}
+.post-text p{line-height:1.6;margin-bottom:12px}
+.post-placeholder{opacity:.6;font-style:italic}
+@media (max-width:760px){.post{grid-template-columns:1fr}}
+.post:first-child{border-top:0;padding-top:0}
