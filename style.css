@@ -151,3 +151,4 @@ a{color:inherit}
 @media (max-width:760px){.post{grid-template-columns:1fr}}
 .post:first-child{border-top:0;padding-top:0}
 .res-sec:first-child{border-top:0;padding-top:0}
+.btn{margin-bottom:22px}
